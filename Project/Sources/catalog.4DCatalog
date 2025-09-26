@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_Share_C-S_Web_Sesson" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="INFO" uuid="107A367EBCC346259FD971E8FC1097DA" id="1">
+		<field name="ID" uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="Description" uuid="C9EFE648E9234AADA33FB25D61C0190B" type="10" never_null="true" id="2">
+			<field_extra position="4"/>
+		</field>
+		<field name="TabTitle" uuid="58AF214936C941439CB263026A5B46ED" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="PageNumber" uuid="A2D86BBFD5134D06999CBDD14FD07A27" type="4" never_null="true" id="4">
+			<field_extra position="2"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Products" uuid="A7089AABD2274CD4947C8D20B5E857D2" id="2">
+		<field name="ID" uuid="BDC2D4A7819B4BB3864338784B778F60" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="628D6D289D424C079D6BACE2B391A5B3" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="price" uuid="D7C0B0620864446397DB4C2795C6113F" type="6" never_null="true" id="3"/>
+		<field name="description" uuid="29EFF47DA103453B9D39612EAF0EE082" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="picture" uuid="510900356CB14B8F8AF6EB8A5B94C19F" type="12" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="BDC2D4A7819B4BB3864338784B778F60"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="246.83203125" top="31.09765625" width="156.19140625" height="209.0234375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="User" uuid="5E4BC416083649F7B503C5F4B0226444" id="3">
+		<field name="ID" uuid="4E2D553154BB4FC597408C76E11B57BF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="identifier" uuid="AA98D500BABE45E8A97247456DDC116B" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="password" uuid="02479728C183419CBAF7E49880BB8B3F" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="role" uuid="D2DE7D8D09C44B1BA44903F053E5A5C2" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="4E2D553154BB4FC597408C76E11B57BF"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="440.59765625" top="39.6328125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="4CA55605F18440528B863D2FE9EA9793" type="7">
+		<field_ref uuid="BDC2D4A7819B4BB3864338784B778F60" name="ID">
+			<table_ref uuid="A7089AABD2274CD4947C8D20B5E857D2" name="Products"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B17E3BF54450493DB72FBD48A5745784" type="7">
+		<field_ref uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" name="ID">
+			<table_ref uuid="107A367EBCC346259FD971E8FC1097DA" name="INFO"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="D49279B363D14E78A243A9E19638DD17" type="7">
+		<field_ref uuid="4E2D553154BB4FC597408C76E11B57BF" name="ID">
+			<table_ref uuid="5E4BC416083649F7B503C5F4B0226444" name="User"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="HDI_Template_v18" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

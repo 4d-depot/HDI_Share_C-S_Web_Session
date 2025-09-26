@@ -1,0 +1,88 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "what",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			},
+			{
+				"id": "credentials",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {
+					"identifier": "info"
+				}
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"oninit"
+						],
+						"id": "fPaPyEyhw5X5CMqub4eLMc",
+						"method": "ds.authentify",
+						"params": [
+							{
+								"name": "credentials",
+								"type": "Object",
+								"datasource": "credentials",
+								"id": "1bKcifas73NuKkdQbzbdD2"
+							}
+						],
+						"datasource": "",
+						"allowedOnHTTPGET": false,
+						"returns": {
+							"name": "result",
+							"type": "Text",
+							"datasource": "what"
+						},
+						"disabled": false
+					}
+				],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"boRIq00aJ7"
+			],
+			"linkedNodes": {}
+		},
+		"boRIq00aJ7": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"datasource": "what"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

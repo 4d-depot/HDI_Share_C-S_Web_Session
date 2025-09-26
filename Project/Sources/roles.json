@@ -1,0 +1,54 @@
+{
+	"forceLogin": false,
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "Products",
+				"type": "dataclass",
+				"read": [
+					"basic"
+				]
+			},
+			{
+				"applyTo": "ds",
+				"type": "datastore",
+				"read": [
+					"all"
+				],
+				"create": [
+					"all"
+				],
+				"update": [
+					"all"
+				],
+				"drop": [
+					"all"
+				],
+				"execute": [
+					"all"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+			"id": "k8SSd4zUw82NoDC6MgLsLu",
+			"privilege": "basic",
+			"includes": []
+		},
+		{
+			"id": "6ptt2scsU7FhZaaRtvC9GH",
+			"privilege": "all",
+			"includes": []
+		}
+	],
+	"roles": [
+		{
+			"id": "tWKQJdbGbHQ8wicCLfTJCe",
+			"role": "Employee",
+			"privileges": [
+				"basic"
+			]
+		}
+	]
+}
