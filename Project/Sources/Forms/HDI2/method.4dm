@@ -5,6 +5,8 @@ Case of
 		Form:C1466.identifier:="mary@4d.com"
 		Form:C1466.password:="a"
 		
+		Form:C1466.sessionId:=ds:C1482.authentify({identifier: "info"}).sessionId
+		
 		
 		InitInfo
 		

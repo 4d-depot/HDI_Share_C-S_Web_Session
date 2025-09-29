@@ -3,13 +3,6 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "what",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": ""
-			},
-			{
 				"id": "credentials",
 				"type": "scalar",
 				"namespace": "",
@@ -17,6 +10,13 @@
 				"initialValue": {
 					"identifier": "info"
 				}
+			},
+			{
+				"id": "info",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {}
 			}
 		],
 		"styles": []
@@ -50,20 +50,24 @@
 						"allowedOnHTTPGET": false,
 						"returns": {
 							"name": "result",
-							"type": "Text",
-							"datasource": "what"
+							"type": "Object",
+							"datasource": "info"
 						},
 						"disabled": false
 					}
 				],
 				"airyMode": false,
-				"className": "bg-white h-full w-full px-6"
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingTop": "10px"
+				}
 			},
 			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
 			"nodes": [
+				"E8dB4ruT__",
 				"boRIq00aJ7"
 			],
 			"linkedNodes": {}
@@ -75,10 +79,66 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"datasource": "what"
+				"datasource": "info.page",
+				"style": {
+					"paddingTop": "0px"
+				}
 			},
 			"displayName": "Page Loader",
 			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"E8dB4ruT__": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Session Id: ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "info.sessionId",
+								"children": [
+									{
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "xxxx"
+									}
+								],
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "info.sessionId",
+				"style": {
+					"fontSize": "20px",
+					"color": "#226aa4"
+				}
+			},
+			"displayName": "Text",
+			"custom": {
+				"__t": {}
+			},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [],

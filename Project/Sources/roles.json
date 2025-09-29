@@ -1,11 +1,18 @@
 {
-	"forceLogin": false,
+	"forceLogin": true,
 	"permissions": {
 		"allowed": [
 			{
 				"applyTo": "Products",
 				"type": "dataclass",
 				"read": [
+					"basic"
+				]
+			},
+			{
+				"applyTo": "ds.getUserInfo",
+				"type": "method",
+				"execute": [
 					"basic"
 				]
 			},

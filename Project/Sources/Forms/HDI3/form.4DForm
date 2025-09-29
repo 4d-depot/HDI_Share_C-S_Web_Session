@@ -1,0 +1,111 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 89,
+					"top": 75,
+					"width": 315,
+					"height": 221,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"focusable": false,
+					"scrollbarHorizontal": "hidden",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"listboxType": "collection",
+					"selectionMode": "none",
+					"dataSource": "Form:C1466.licenseUsage",
+					"columns": [
+						{
+							"header": {
+								"text": "Product name",
+								"name": "Header2"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"width": 150,
+							"enterable": false,
+							"dataSource": "This:C1470.productName"
+						},
+						{
+							"header": {
+								"text": "Product used count",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"width": 150,
+							"enterable": false,
+							"dataSource": "This:C1470.productUsedCount",
+							"textAlign": "center"
+						}
+					]
+				},
+				"Text": {
+					"type": "text",
+					"text": "License usage",
+					"top": 30,
+					"left": 80,
+					"width": 300,
+					"height": 20,
+					"textAlign": "center",
+					"stroke": "#6495ed",
+					"fontSize": 18,
+					"fontWeight": "bold"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Refresh",
+					"top": 305,
+					"left": 101,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"geometryStamp": 49,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
