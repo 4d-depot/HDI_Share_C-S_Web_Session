@@ -45,7 +45,7 @@ exposed Function authentify($credentials : Object) : Object
 	
 	
 exposed Function getOTP() : Text
-	return Session:C1714.createOTP()
+	return Session:C1714.createOTP(60)
 	
 	
 exposed Function getUserInfo() : Object

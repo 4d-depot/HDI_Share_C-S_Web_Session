@@ -10,10 +10,24 @@
 				]
 			},
 			{
+				"applyTo": "User",
+				"type": "dataclass",
+				"read": [
+					"forAuthentication"
+				]
+			},
+			{
 				"applyTo": "ds.getUserInfo",
 				"type": "method",
 				"execute": [
 					"basic"
+				]
+			},
+			{
+				"applyTo": "ds.authentify",
+				"type": "method",
+				"promote": [
+					"forAuthentication"
 				]
 			},
 			{
@@ -41,6 +55,10 @@
 		{
 			"id": "k8SSd4zUw82NoDC6MgLsLu",
 			"privilege": "basic",
+			"includes": []
+		},
+		{
+			"privilege": "forAuthentication",
 			"includes": []
 		},
 		{

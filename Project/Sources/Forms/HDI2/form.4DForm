@@ -145,10 +145,10 @@
 				},
 				"Button2": {
 					"type": "button",
-					"text": "3- Load products",
-					"top": 510,
+					"text": "4- Load products with OTP",
+					"top": 600,
 					"left": 60,
-					"width": 150,
+					"width": 250,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -207,7 +207,7 @@
 				},
 				"Line2": {
 					"type": "line",
-					"top": 670,
+					"top": 720,
 					"left": 30,
 					"width": 350,
 					"height": 0,
@@ -242,7 +242,7 @@
 				"Input4": {
 					"type": "input",
 					"left": 60,
-					"top": 630,
+					"top": 550,
 					"width": 350,
 					"height": 20,
 					"dataSource": "Form:C1466.otp",
@@ -254,7 +254,7 @@
 				"Text2": {
 					"type": "text",
 					"text": "OTP:",
-					"top": 630,
+					"top": 550,
 					"left": 0,
 					"width": 50,
 					"height": 20,
@@ -264,7 +264,7 @@
 				"Input5": {
 					"type": "input",
 					"left": 30,
-					"top": 570,
+					"top": 670,
 					"width": 380,
 					"height": 40,
 					"dataSource": "Form:C1466.url",
@@ -300,13 +300,13 @@
 				"Text5": {
 					"type": "text",
 					"text": "WA URL:",
-					"top": 540,
-					"left": 20,
+					"top": 640,
+					"left": 30,
 					"width": 90,
 					"height": 20,
 					"fontStyle": "italic",
 					"stroke": "#008000",
-					"textAlign": "right"
+					"textAlign": "left"
 				},
 				"Button3": {
 					"type": "button",
@@ -319,6 +319,19 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false
+				},
+				"Button4": {
+					"type": "button",
+					"text": "3- Create OTP",
+					"top": 510,
+					"left": 60,
+					"width": 150,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
 					"focusable": false
 				}
 			}
@@ -412,5 +425,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 662
+	"geometryStamp": 726
 }

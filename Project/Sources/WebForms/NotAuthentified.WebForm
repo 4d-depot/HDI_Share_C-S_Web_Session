@@ -1,7 +1,18 @@
 {
 	"metadata": {
 		"v": "1.0",
-		"datasources": [],
+		"datasources": [
+			{
+				"id": "credentials",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {
+					"identifier": "mary@4d.com",
+					"password": "a"
+				}
+			}
+		],
 		"styles": []
 	},
 	"components": {
@@ -17,7 +28,11 @@
 				"className": "bg-white h-full w-full px-6",
 				"style": {
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"display": "flex",
+					"gap": "10px",
+					"flexDirection": "column",
+					"width": "fit-content"
 				}
 			},
 			"displayName": "Page",

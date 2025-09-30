@@ -63,5 +63,14 @@
 				]
 			}
 		}
+	],
+	"Navigation": [
+		{
+			"id": "info",
+			"type": "scalar",
+			"namespace": "Navigation",
+			"dataType": "object",
+			"initialValue": {}
+		}
 	]
 }

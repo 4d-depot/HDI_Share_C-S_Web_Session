@@ -10,13 +10,6 @@
 				"initialValue": {
 					"identifier": "info"
 				}
-			},
-			{
-				"id": "info",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "object",
-				"initialValue": {}
 			}
 		],
 		"styles": []
@@ -51,7 +44,7 @@
 						"returns": {
 							"name": "result",
 							"type": "Object",
-							"datasource": "info"
+							"datasource": "Navigation:info"
 						},
 						"disabled": false
 					}
@@ -79,7 +72,7 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"datasource": "info.page",
+				"datasource": "Navigation:info.page",
 				"style": {
 					"paddingTop": "0px"
 				}
@@ -112,7 +105,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "info.sessionId",
+								"datasource": "Navigation:info.sessionId",
 								"children": [
 									{
 										"italic": false,
@@ -129,7 +122,7 @@
 						]
 					}
 				],
-				"datasource": "info.sessionId",
+				"datasource": "Navigation:info.sessionId",
 				"style": {
 					"fontSize": "20px",
 					"color": "#226aa4"
