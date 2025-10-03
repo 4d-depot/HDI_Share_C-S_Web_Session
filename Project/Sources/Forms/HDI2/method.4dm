@@ -2,11 +2,14 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		
+		btnTrace:=False:C215
+		
 		Form:C1466.identifier:="mary@4d.com"
 		Form:C1466.password:="a"
 		
 		Form:C1466.sessionId:=ds:C1482.authentify({identifier: "info"}).sessionId
 		
+		Form:C1466.licenseUsage:=ds:C1482.getLicenseUsage()
 		
 		InitInfo
 		

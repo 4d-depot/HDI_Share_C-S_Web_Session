@@ -52,7 +52,10 @@
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
-					"paddingTop": "10px"
+					"paddingTop": "24px",
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "20px"
 				}
 			},
 			"displayName": "Page",

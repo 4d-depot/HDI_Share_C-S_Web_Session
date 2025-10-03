@@ -6,7 +6,8 @@ exposed Function authentify($credentials : Object) : Object
 	
 	var $result : Object
 	
-	$result:={sessionId: Session:C1714.id; page: "NotAuthentified"}
+	$result:={sessionId: Session:C1714.id; page: "NotAuthentified"; authentified: "Wrong credentials"}
+	
 	
 	If (Session:C1714.storage.info#Null:C1517)
 		$result.authentified:="You are already authentified"
@@ -14,8 +15,6 @@ exposed Function authentify($credentials : Object) : Object
 	Else 
 		
 		If ($credentials.identifier#"info")
-			
-			$result.authentified:=False:C215
 			
 			Use (Session:C1714.storage)
 				Session:C1714.storage.info:=Null:C1517
@@ -44,7 +43,7 @@ exposed Function authentify($credentials : Object) : Object
 	return $result
 	
 	
-exposed Function getOTP() : Text
+Function getOTP() : Text
 	return Session:C1714.createOTP(60)
 	
 	
@@ -52,5 +51,5 @@ exposed Function getUserInfo() : Object
 	return Session:C1714.storage.info
 	
 	
-exposed Function getLicenseUsage() : Collection
+Function getLicenseUsage() : Collection
 	return License usage:C1782
