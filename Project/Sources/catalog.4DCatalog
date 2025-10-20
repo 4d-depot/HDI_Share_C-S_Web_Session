@@ -37,13 +37,13 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="User" uuid="5E4BC416083649F7B503C5F4B0226444" id="3">
+	<table name="(User)" uuid="5E4BC416083649F7B503C5F4B0226444" id="3" hide_in_REST="true">
 		<field name="ID" uuid="4E2D553154BB4FC597408C76E11B57BF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="identifier" uuid="AA98D500BABE45E8A97247456DDC116B" type="10" limiting_length="255" never_null="true" id="2"/>
 		<field name="password" uuid="02479728C183419CBAF7E49880BB8B3F" type="10" limiting_length="255" never_null="true" id="3"/>
 		<field name="role" uuid="D2DE7D8D09C44B1BA44903F053E5A5C2" type="10" limiting_length="255" never_null="true" id="4"/>
 		<primary_key field_name="ID" field_uuid="4E2D553154BB4FC597408C76E11B57BF"/>
-		<table_extra>
+		<table_extra trashed="true">
 			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="440.59765625" top="39.6328125" width="120" height="167.33203125"/>
@@ -62,7 +62,7 @@
 	</index>
 	<index kind="regular" unique_keys="true" uuid="D49279B363D14E78A243A9E19638DD17" type="7">
 		<field_ref uuid="4E2D553154BB4FC597408C76E11B57BF" name="ID">
-			<table_ref uuid="5E4BC416083649F7B503C5F4B0226444" name="User"/>
+			<table_ref uuid="5E4BC416083649F7B503C5F4B0226444" name="(User)"/>
 		</field_ref>
 	</index>
 	<base_extra package_name="HDI_Template_v18" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">

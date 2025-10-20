@@ -4,8 +4,5 @@ If (btnTrace)
 End if 
 
 
-Form:C1466.result:=ds:C1482.authentify({identifier: Form:C1466.identifier; password: Form:C1466.password})
-
-
-
+Form:C1466.privileges:=ds:C1482.setPrivilege(Form:C1466.privilege)
 

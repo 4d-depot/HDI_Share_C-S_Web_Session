@@ -15,8 +15,8 @@
 				"id": "userInfo",
 				"type": "scalar",
 				"namespace": "",
-				"dataType": "object",
-				"initialValue": {}
+				"dataType": "string",
+				"initialValue": ""
 			}
 		],
 		"styles": [
@@ -148,7 +148,7 @@
 						"allowedOnHTTPGET": false,
 						"returns": {
 							"name": "result",
-							"type": "Object",
+							"type": "Text",
 							"datasource": "userInfo"
 						}
 					}
@@ -158,8 +158,8 @@
 				"style": {
 					"display": "flex",
 					"gap": "10px",
-					"paddingLeft": "0px",
-					"paddingTop": "0px",
+					"paddingLeft": "24px",
+					"paddingTop": "10px",
 					"flexDirection": "column"
 				}
 			},
@@ -365,7 +365,7 @@
 					"borderWidth": "0px",
 					"justifyContent": "space-between",
 					"alignItems": "start",
-					"height": "400px",
+					"height": "320px",
 					"marginLeft": "0px",
 					"width": "410px"
 				},
@@ -489,7 +489,8 @@
 					"flexDirection": "column",
 					"justifyContent": "flex-start",
 					"alignItems": "start",
-					"width": "auto"
+					"width": "auto",
+					"gap": "10px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -503,70 +504,10 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"XS17HxsX9v",
-				"VTUV3oaEFp",
+				"PLGNVNwCON",
 				"bdqf7gIrZe",
 				"2wONMoqo_G"
 			],
-			"linkedNodes": {}
-		},
-		"Ean4nYyU9g": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "PRODUCTS LIST (",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							},
-							{
-								"type": "datasource",
-								"datasource": "products.length",
-								"children": [
-									{
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false,
-										"text": "XX"
-									}
-								],
-								"dsType": "number",
-								"format": "0"
-							},
-							{
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false,
-								"text": ")"
-							}
-						]
-					}
-				],
-				"datasource": "products.length",
-				"style": {
-					"color": "#226aa4",
-					"fontSize": "20px"
-				}
-			},
-			"displayName": "Text",
-			"custom": {
-				"__t": {}
-			},
-			"parent": "VTUV3oaEFp",
-			"hidden": false,
-			"nodes": [],
 			"linkedNodes": {}
 		},
 		"JFGOBFP36V": {
@@ -775,31 +716,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"VTUV3oaEFp": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"justifyContent": "space-between",
-					"alignItems": "center",
-					"gap": "10px",
-					"marginTop": "20px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "bNbseIHWZ0",
-			"hidden": false,
-			"nodes": [
-				"Ean4nYyU9g"
-			],
-			"linkedNodes": {}
-		},
 		"edqGZwyfRb": {
 			"type": {
 				"resolvedName": "Image"
@@ -822,72 +738,7 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"WkkgyCFmD5": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Welcome:  ",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": ""
-			},
-			"displayName": "Text",
-			"custom": {
-				"__t": {}
-			},
-			"parent": "XS17HxsX9v",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"XS17HxsX9v": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"style": {
-					"display": "flex",
-					"alignItems": "center",
-					"gap": "10px",
-					"color": "#226aa4",
-					"fontSize": "16px",
-					"flexDirection": "row",
-					"marginTop": "0px",
-					"paddingTop": "0px",
-					"justifyContent": "center"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "bNbseIHWZ0",
-			"hidden": false,
-			"nodes": [
-				"WkkgyCFmD5",
-				"TePkHMmX-6",
-				"AUjikRzN1h",
-				"D43I5T-pdZ"
-			],
-			"linkedNodes": {}
-		},
-		"TePkHMmX-6": {
+		"PLGNVNwCON": {
 			"type": {
 				"resolvedName": "Text"
 			},
@@ -904,90 +755,11 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "userInfo.who",
+								"datasource": "userInfo",
 								"children": [
 									{
-										"text": "who",
-										"bold": true,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "userInfo.who"
-			},
-			"displayName": "Text",
-			"custom": {
-				"__t": {}
-			},
-			"parent": "XS17HxsX9v",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"AUjikRzN1h": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "You logged at:  ",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": ""
-			},
-			"displayName": "Text",
-			"custom": {
-				"__t": {}
-			},
-			"parent": "XS17HxsX9v",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"D43I5T-pdZ": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "userInfo.whatTime",
-								"children": [
-									{
-										"text": "whatTime",
-										"bold": true,
+										"text": "userInfo",
+										"bold": false,
 										"italic": false,
 										"underlined": false,
 										"strikethrough": false
@@ -997,18 +769,25 @@
 								"format": ""
 							},
 							{
-								"text": ""
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "  "
 							}
 						]
 					}
 				],
-				"datasource": "userInfo.whatTime"
+				"datasource": "userInfo",
+				"style": {
+					"color": "#226aa4"
+				}
 			},
 			"displayName": "Text",
 			"custom": {
 				"__t": {}
 			},
-			"parent": "XS17HxsX9v",
+			"parent": "bNbseIHWZ0",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

@@ -3,31 +3,17 @@
 	"permissions": {
 		"allowed": [
 			{
-				"applyTo": "Products",
-				"type": "dataclass",
-				"read": [
-					"basic"
-				]
-			},
-			{
-				"applyTo": "User",
-				"type": "dataclass",
-				"read": [
-					"forAuthentication"
-				]
-			},
-			{
 				"applyTo": "ds.getUserInfo",
 				"type": "method",
 				"execute": [
-					"basic"
+					"guest"
 				]
 			},
 			{
-				"applyTo": "ds.authentify",
-				"type": "method",
-				"promote": [
-					"forAuthentication"
+				"applyTo": "Products",
+				"type": "dataclass",
+				"read": [
+					"viewProducts"
 				]
 			},
 			{
@@ -54,11 +40,7 @@
 	"privileges": [
 		{
 			"id": "k8SSd4zUw82NoDC6MgLsLu",
-			"privilege": "basic",
-			"includes": []
-		},
-		{
-			"privilege": "forAuthentication",
+			"privilege": "viewProducts",
 			"includes": []
 		},
 		{
@@ -67,13 +49,5 @@
 			"includes": []
 		}
 	],
-	"roles": [
-		{
-			"id": "tWKQJdbGbHQ8wicCLfTJCe",
-			"role": "Employee",
-			"privileges": [
-				"basic"
-			]
-		}
-	]
+	"roles": []
 }

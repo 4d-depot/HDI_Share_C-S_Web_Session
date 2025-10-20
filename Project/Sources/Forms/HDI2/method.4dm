@@ -4,12 +4,14 @@ Case of
 		
 		btnTrace:=False:C215
 		
-		Form:C1466.identifier:="mary@4d.com"
-		Form:C1466.password:="a"
-		
-		Form:C1466.sessionId:=ds:C1482.authentify({identifier: "info"}).sessionId
-		
 		Form:C1466.licenseUsage:=ds:C1482.getLicenseUsage()
+		
+		Form:C1466.sessionId:=ds:C1482.getSessionId()
+		
+		Form:C1466.privilege:="viewProducts"
+		
+		Form:C1466.privileges:=ds:C1482.getPrivileges()
+		
 		
 		InitInfo
 		

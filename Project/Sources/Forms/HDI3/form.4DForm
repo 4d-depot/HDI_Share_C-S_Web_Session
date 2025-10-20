@@ -25,7 +25,7 @@
 					"top": 50,
 					"left": 40,
 					"width": 600,
-					"height": 700,
+					"height": 800,
 					"sizingY": "grow",
 					"dataSource": "GuideLines[0].Description",
 					"focusable": false,
@@ -44,7 +44,7 @@
 			}
 		}
 	],
-	"geometryStamp": 63,
+	"geometryStamp": 66,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
@@ -54,5 +54,5 @@
 		}
 	},
 	"width": 700,
-	"height": 800
+	"height": 900
 }

@@ -2,53 +2,33 @@ Class extends DataStoreImplementation
 
 
 
-exposed Function authentify($credentials : Object) : Object
+Function setPrivilege($priv : Text) : Text
 	
-	var $result : Object
+	Session:C1714.clearPrivileges()
+	Session:C1714.setPrivileges($priv)
 	
-	$result:={sessionId: Session:C1714.id; page: "NotAuthentified"; authentified: "Wrong credentials"}
+	Use (Session:C1714.storage)
+		Session:C1714.storage.info:=New shared object:C1526("who"; Current user:C182; "whatTime"; String:C10(Current time:C178(); HH MM:K7:2))
+	End use 
+	
+	return Session:C1714.getPrivileges().join(" ")
 	
 	
-	If (Session:C1714.storage.info#Null:C1517)
-		$result.authentified:="You are already authentified"
-		$result.page:="Products"
-	Else 
-		
-		If ($credentials.identifier#"info")
-			
-			Use (Session:C1714.storage)
-				Session:C1714.storage.info:=Null:C1517
-			End use 
-			
-			Session:C1714.clearPrivileges()
-			
-			$user:=ds:C1482.User.query("identifier = :1"; $credentials.identifier).first()
-			
-			If ($user#Null:C1517)
-				If ($user.password=$credentials.password)
-					
-					Use (Session:C1714.storage)
-						Session:C1714.storage.info:=New shared object:C1526("who"; $user.identifier; "whatTime"; String:C10(Current time:C178(); HH MM:K7:2))
-					End use 
-					
-					Session:C1714.setPrivileges({roles: $user.role})
-					$result.authentified:="You have been fully authentified"
-					$result.page:="Products"
-				End if 
-			End if 
-		End if 
-		
-	End if 
-	
-	return $result
+Function getPrivileges() : Text
+	return Session:C1714.getPrivileges().join(" ")
 	
 	
 Function getOTP() : Text
-	return Session:C1714.createOTP(60)
+	return Session:C1714.createOTP(180)
 	
 	
-exposed Function getUserInfo() : Object
-	return Session:C1714.storage.info
+exposed Function getUserInfo() : Text
+	
+	return "Session id: "+String:C10(Session:C1714.id)+"\n \n"+"Welcome "+Session:C1714.storage.info.who+"! \n \n"+"You put the "+Session:C1714.getPrivileges().join(" ")+" privilege in the session at "+Session:C1714.storage.info.whatTime
+	
+	
+Function getSessionId() : Text
+	return Session:C1714.id
 	
 	
 Function getLicenseUsage() : Collection
