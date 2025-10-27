@@ -116,7 +116,7 @@
 				},
 				"Input1": {
 					"type": "input",
-					"left": 130,
+					"left": 260,
 					"top": 420,
 					"width": 100,
 					"height": 20,
@@ -130,7 +130,7 @@
 					"type": "button",
 					"text": "Put this privilege in the session",
 					"top": 460,
-					"left": 0,
+					"left": 130,
 					"width": 250,
 					"height": 20,
 					"events": [
@@ -180,7 +180,7 @@
 				},
 				"Input3": {
 					"type": "input",
-					"left": 90,
+					"left": 220,
 					"top": 530,
 					"width": 180,
 					"height": 20,
@@ -221,7 +221,7 @@
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": -80,
+					"left": 50,
 					"top": 260,
 					"width": 315,
 					"height": 101,
@@ -272,7 +272,7 @@
 					"type": "text",
 					"text": "License usage",
 					"top": 230,
-					"left": -80,
+					"left": 50,
 					"width": 150,
 					"height": 20,
 					"textAlign": "left",
@@ -284,7 +284,7 @@
 					"type": "button",
 					"text": "Refresh",
 					"top": 230,
-					"left": 130,
+					"left": 260,
 					"width": 90,
 					"height": 20,
 					"events": [
@@ -296,7 +296,7 @@
 				"Line3": {
 					"type": "line",
 					"top": 400,
-					"left": -100,
+					"left": 30,
 					"width": 360,
 					"height": 0,
 					"stroke": "#6495ed",
@@ -308,7 +308,7 @@
 				"Line1": {
 					"type": "line",
 					"top": 570,
-					"left": -100,
+					"left": 30,
 					"width": 360,
 					"height": 0,
 					"stroke": "#6495ed",
@@ -321,7 +321,7 @@
 					"type": "text",
 					"text": "Privilege to put in the session:",
 					"top": 420,
-					"left": -80,
+					"left": 50,
 					"width": 200,
 					"height": 20
 				},
@@ -329,7 +329,7 @@
 					"type": "text",
 					"text": "Privileges in the session:",
 					"top": 530,
-					"left": -80,
+					"left": 50,
 					"width": 200,
 					"height": 20,
 					"fontWeight": "bold",
@@ -339,7 +339,7 @@
 					"type": "text",
 					"text": "2 ------------------------------->",
 					"top": 210,
-					"left": -100,
+					"left": 410,
 					"width": 300,
 					"height": 20,
 					"fontWeight": "bold",
@@ -349,7 +349,7 @@
 					"type": "text",
 					"text": "1 ----->",
 					"top": 460,
-					"left": -60,
+					"left": 50,
 					"width": 70,
 					"height": 20,
 					"fontWeight": "bold",
@@ -369,5 +369,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2464
+	"geometryStamp": 2519
 }
