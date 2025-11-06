@@ -1,6 +1,6 @@
-# HDI_Template_20
+# HDI_Share_C-S_Web_Session
 
-Description (4D 20 Rx)
+Description (4D 21)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
