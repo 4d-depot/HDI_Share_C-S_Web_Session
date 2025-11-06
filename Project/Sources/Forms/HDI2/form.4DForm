@@ -63,8 +63,8 @@
 					"left": 80,
 					"width": 800,
 					"height": 480,
-					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[0].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -89,7 +89,7 @@
 					"left": 50,
 					"width": 900,
 					"height": 60,
-					"sizingY": "grow",
+					"sizingY": "fixed",
 					"dataSource": "Infos[1].Description",
 					"focusable": false,
 					"fill": "#B9CFBD",
@@ -112,7 +112,8 @@
 					"left": 410,
 					"top": 240,
 					"width": 560,
-					"height": 560
+					"height": 560,
+					"sizingY": "fixed"
 				},
 				"Input1": {
 					"type": "input",
@@ -124,7 +125,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingY": "fixed"
 				},
 				"Button1": {
 					"type": "button",
@@ -137,7 +139,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button1.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"Button2": {
 					"type": "button",
@@ -150,7 +153,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button2.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"Text": {
 					"type": "text",
@@ -161,7 +165,8 @@
 					"height": 20,
 					"textAlign": "right",
 					"stroke": "#6495ed",
-					"fontSize": 18
+					"fontSize": 18,
+					"sizingY": "fixed"
 				},
 				"Input2": {
 					"type": "input",
@@ -176,7 +181,8 @@
 					"borderStyle": "none",
 					"stroke": "#6495ed",
 					"fontSize": 18,
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingY": "fixed"
 				},
 				"Input3": {
 					"type": "input",
@@ -190,7 +196,8 @@
 					"stroke": "#6495ed",
 					"fontWeight": "bold",
 					"fontStyle": "italic",
-					"fontSize": 16
+					"fontSize": 16,
+					"sizingY": "fixed"
 				},
 				"Input5": {
 					"type": "input",
@@ -205,7 +212,8 @@
 					"stroke": "#008000",
 					"multiline": "yes",
 					"borderStyle": "none",
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingY": "fixed"
 				},
 				"Text5": {
 					"type": "text",
@@ -217,7 +225,8 @@
 					"fontStyle": "italic",
 					"stroke": "#008000",
 					"textAlign": "left",
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingY": "fixed"
 				},
 				"List Box": {
 					"type": "listbox",
@@ -238,6 +247,7 @@
 					"listboxType": "collection",
 					"selectionMode": "none",
 					"dataSource": "Form:C1466.licenseUsage",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -278,7 +288,8 @@
 					"textAlign": "left",
 					"stroke": "#6495ed",
 					"fontSize": 18,
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingY": "fixed"
 				},
 				"Button5": {
 					"type": "button",
@@ -291,7 +302,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button5.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"Line3": {
 					"type": "line",
@@ -303,7 +315,8 @@
 					"strokeDashArray": [
 						2,
 						2
-					]
+					],
+					"sizingY": "fixed"
 				},
 				"Line1": {
 					"type": "line",
@@ -315,7 +328,8 @@
 					"strokeDashArray": [
 						2,
 						2
-					]
+					],
+					"sizingY": "fixed"
 				},
 				"Text1": {
 					"type": "text",
@@ -323,7 +337,8 @@
 					"top": 420,
 					"left": 50,
 					"width": 200,
-					"height": 20
+					"height": 20,
+					"sizingY": "fixed"
 				},
 				"Text2": {
 					"type": "text",
@@ -333,7 +348,8 @@
 					"width": 200,
 					"height": 20,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingY": "fixed"
 				},
 				"Text3": {
 					"type": "text",
@@ -343,7 +359,8 @@
 					"width": 300,
 					"height": 20,
 					"fontWeight": "bold",
-					"fontSize": 18
+					"fontSize": 18,
+					"sizingY": "fixed"
 				},
 				"Text4": {
 					"type": "text",
@@ -353,7 +370,8 @@
 					"width": 70,
 					"height": 20,
 					"fontWeight": "bold",
-					"fontSize": 18
+					"fontSize": 18,
+					"sizingY": "fixed"
 				}
 			}
 		}
@@ -369,5 +387,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2519
+	"geometryStamp": 2540
 }
