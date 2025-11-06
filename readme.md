@@ -1,6 +1,6 @@
 # HDI_Share_C-S_Web_Session
 
-Description (4D 21)
+SHARE YOUR REMOTE CLIENT SESSION WITH WEB ACCESSES
 
 Find more information on the [blog post](https://blog.4d.com/).
 
