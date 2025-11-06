@@ -2,7 +2,7 @@
 
 4D 21: SHARE YOUR REMOTE CLIENT SESSION WITH WEB ACCESSES
 
-Find more information on the [blog post](https://blog.4d.com/).
+Find more information on the [blog post](https://blog.4d.com/share-your-4d-remote-client-session-with-web-accesses).
 
 ## Installing and Using a 4D Project
 
