@@ -33,3 +33,14 @@ Function getSessionId() : Text
 	
 Function getLicenseUsage() : Collection
 	return License usage:C1782
+	
+	
+exposed Function authentify($priv : Text)
+	Session:C1714.clearPrivileges()
+	Session:C1714.setPrivileges($priv)
+	
+	Use (Session:C1714.storage)
+		Session:C1714.storage.info:=New shared object:C1526("who"; Current user:C182; "whatTime"; String:C10(Current time:C178(); HH MM:K7:2))
+	End use 
+	
+	return Session:C1714.getPrivileges().join(" ")

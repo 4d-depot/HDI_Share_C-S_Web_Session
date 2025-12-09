@@ -1,5 +1,6 @@
 {
 	"forceLogin": true,
+	"restrictedByDefault": true,
 	"permissions": {
 		"allowed": [
 			{
@@ -15,25 +16,6 @@
 				"read": [
 					"viewProducts"
 				]
-			},
-			{
-				"applyTo": "ds",
-				"type": "datastore",
-				"read": [
-					"all"
-				],
-				"create": [
-					"all"
-				],
-				"update": [
-					"all"
-				],
-				"drop": [
-					"all"
-				],
-				"execute": [
-					"all"
-				]
 			}
 		]
 	},
@@ -41,11 +23,6 @@
 		{
 			"id": "k8SSd4zUw82NoDC6MgLsLu",
 			"privilege": "viewProducts",
-			"includes": []
-		},
-		{
-			"id": "6ptt2scsU7FhZaaRtvC9GH",
-			"privilege": "all",
 			"includes": []
 		}
 	],

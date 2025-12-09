@@ -27,7 +27,99 @@
 				"id": "Z6bHiWX-UzB68I7WowkWO"
 			}
 		],
-		"states": [],
+		"states": [
+			{
+				"label": "SaveEnabled",
+				"id": "2hJKUo3GAgbu2Ln2EiCH8s",
+				"conditions": {
+					"id": "jNE1iWutvwhijVh89HjcZ5",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "k7qEKCVPAbhRMhMLfdGSsq",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "newProduct",
+							"dsType": "entity",
+							"op": "notnull"
+						},
+						{
+							"id": "2KYFwAJjvW3EtX9RsbfQr9",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "newProduct.name",
+							"dsType": "string",
+							"op": "neq"
+						},
+						{
+							"id": "166AfcSvnTM6y6c7um1vY1",
+							"type": "datasource",
+							"name": "condition",
+							"value": "0",
+							"valueType": "hardCoded",
+							"path": "newProduct.price",
+							"dsType": "number",
+							"op": "neq",
+							"dataType": "number"
+						},
+						{
+							"id": "o9HsqunfkPemqSX7AjeSpp",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "newProduct.price",
+							"dsType": "number",
+							"op": "notnull",
+							"dataType": "number"
+						},
+						{
+							"id": "hL5tNjW3m6ihjQCp9gaCLb",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "newProduct.name",
+							"dsType": "string",
+							"op": "notnull"
+						},
+						{
+							"id": "rf1iN82ThKURzzYLP4o315",
+							"type": "datasource",
+							"name": "condition",
+							"value": "",
+							"valueType": "hardCoded",
+							"path": "creationInProgress",
+							"dsType": "bool",
+							"op": "istrue"
+						}
+					]
+				}
+			},
+			{
+				"label": "CreationInProgress",
+				"id": "nEUniZ4TzFFcQhTWAPqj5v",
+				"conditions": {
+					"id": "m2dcjKFXT7evUGgAgw5hSi",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "creationInProgress",
+					"dsType": "bool",
+					"op": "istrue"
+				}
+			},
+			{
+				"label": "Default",
+				"id": "gr5Sv3dBBJSzcEeKPtW1tX"
+			}
+		],
 		"defaultStates": [
 			"r78zff6sk2iX6xqHCc9qKC",
 			"uqQE1WkJRPonSg677NvYit",
@@ -42,25 +134,7 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"oninit"
-						],
-						"id": "6yYFshcbs1pjCF3cFtXnPe",
-						"method": "ds.getUserInfo",
-						"params": [],
-						"datasource": "",
-						"allowedOnHTTPGET": false,
-						"returns": {
-							"name": "result",
-							"type": "Text",
-							"datasource": "userInfo"
-						}
-					}
-				],
+				"events": [],
 				"airyMode": false,
 				"className": "bg-white h-full w-full px-6",
 				"style": {
@@ -76,6 +150,7 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
+				"76T2ekoB6l",
 				"bNbseIHWZ0"
 			],
 			"linkedNodes": {}
@@ -696,6 +771,106 @@
 				"__t": {}
 			},
 			"parent": "bNbseIHWZ0",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"76T2ekoB6l": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Authentify",
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "1EbMXhuHcAov1HMHBsmpu3",
+						"method": "ds.authentify",
+						"params": [
+							{
+								"name": "priv",
+								"type": "Text",
+								"datasource": "",
+								"id": "3Kw6zLtKsit6mNZjaUQoj2",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": "viewProducts"
+							}
+						],
+						"datasource": "",
+						"allowedOnHTTPGET": false,
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "htBGHaT9hsTugu6W1iHi6Z",
+						"method": "ds.getUserInfo",
+						"params": [],
+						"datasource": "",
+						"allowedOnHTTPGET": false,
+						"returns": {
+							"name": "result",
+							"type": "Text",
+							"datasource": "userInfo"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "8ADXDu373Xew5nxzVdHStv",
+						"events": [
+							"onclick"
+						],
+						"action": "all",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "products",
+							"type": "entitysel",
+							"from": "",
+							"namespace": ""
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"width": "200px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "GE1yvX4NmP"
+			}
+		},
+		"GE1yvX4NmP": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "76T2ekoB6l",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

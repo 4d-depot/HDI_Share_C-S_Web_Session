@@ -201,8 +201,8 @@
 				},
 				"Input5": {
 					"type": "input",
-					"left": 170,
-					"top": 840,
+					"left": 160,
+					"top": 810,
 					"width": 800,
 					"height": 30,
 					"dataSource": "Form:C1466.url",
@@ -213,20 +213,22 @@
 					"multiline": "yes",
 					"borderStyle": "none",
 					"fontWeight": "bold",
-					"sizingY": "fixed"
+					"sizingY": "fixed",
+					"fontSize": 16
 				},
 				"Text5": {
 					"type": "text",
-					"text": "WA URL:",
+					"text": "Web area URL:",
 					"top": 810,
-					"left": 170,
-					"width": 90,
+					"left": 0,
+					"width": 150,
 					"height": 20,
 					"fontStyle": "italic",
 					"stroke": "#008000",
-					"textAlign": "left",
+					"textAlign": "right",
 					"fontWeight": "bold",
-					"sizingY": "fixed"
+					"sizingY": "fixed",
+					"fontSize": 16
 				},
 				"List Box": {
 					"type": "listbox",
@@ -387,5 +389,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2540
+	"geometryStamp": 2589
 }
