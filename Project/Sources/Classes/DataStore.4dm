@@ -32,6 +32,9 @@ Function getSessionId() : Text
 	
 	
 Function getLicenseUsage() : Collection
+	
+	TRACE:C157
+	
 	return License usage:C1782
 	
 	

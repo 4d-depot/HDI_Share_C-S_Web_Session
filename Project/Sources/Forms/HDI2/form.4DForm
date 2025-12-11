@@ -42,8 +42,8 @@
 				"Check Box3": {
 					"type": "checkbox",
 					"text": "Trace",
-					"top": 850,
-					"left": 30,
+					"top": 860,
+					"left": 910,
 					"width": 70,
 					"height": 20,
 					"events": [
@@ -83,7 +83,16 @@
 		},
 		{
 			"objects": {
-				"information2": {
+				"QodlyPage": {
+					"type": "webArea",
+					"left": 410,
+					"top": 240,
+					"width": 560,
+					"height": 600,
+					"sizingY": "fixed",
+					"borderStyle": "none"
+				},
+				"information1": {
 					"type": "input",
 					"top": 80,
 					"left": 50,
@@ -103,19 +112,11 @@
 						"onClick"
 					],
 					"class": "description",
-					"method": "ObjectMethods/information2.4dm",
+					"method": "ObjectMethods/information1.4dm",
 					"textAlign": "center",
 					"fontSize": 18
 				},
-				"QodlyPage": {
-					"type": "webArea",
-					"left": 410,
-					"top": 240,
-					"width": 560,
-					"height": 560,
-					"sizingY": "fixed"
-				},
-				"Input1": {
+				"Input9": {
 					"type": "input",
 					"left": 260,
 					"top": 420,
@@ -128,7 +129,7 @@
 					"fontWeight": "bold",
 					"sizingY": "fixed"
 				},
-				"Button1": {
+				"Button7": {
 					"type": "button",
 					"text": "Put this privilege in the session",
 					"top": 460,
@@ -138,41 +139,41 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button1.4dm",
+					"method": "ObjectMethods/Button7.4dm",
 					"focusable": false,
 					"sizingY": "fixed"
 				},
-				"Button2": {
+				"Button8": {
 					"type": "button",
 					"text": "View products here",
 					"top": 210,
-					"left": 790,
+					"left": 720,
 					"width": 180,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button2.4dm",
+					"method": "ObjectMethods/Button8.4dm",
 					"focusable": false,
 					"sizingY": "fixed"
 				},
-				"Text": {
+				"Text7": {
 					"type": "text",
 					"text": "Remote client session id:",
 					"top": 170,
-					"left": 330,
+					"left": 340,
 					"width": 250,
 					"height": 20,
 					"textAlign": "right",
-					"stroke": "#6495ed",
+					"stroke": "#6495ED",
 					"fontSize": 18,
 					"sizingY": "fixed"
 				},
-				"Input2": {
+				"Input10": {
 					"type": "input",
-					"left": 590,
+					"left": 600,
 					"top": 170,
-					"width": 400,
+					"width": 420,
 					"height": 20,
 					"dataSource": "Form:C1466.sessionId",
 					"enterable": false,
@@ -184,7 +185,7 @@
 					"fontWeight": "bold",
 					"sizingY": "fixed"
 				},
-				"Input3": {
+				"Input11": {
 					"type": "input",
 					"left": 220,
 					"top": 530,
@@ -199,10 +200,10 @@
 					"fontSize": 16,
 					"sizingY": "fixed"
 				},
-				"Input5": {
+				"Input12": {
 					"type": "input",
-					"left": 160,
-					"top": 810,
+					"left": 30,
+					"top": 850,
 					"width": 800,
 					"height": 30,
 					"dataSource": "Form:C1466.url",
@@ -216,25 +217,25 @@
 					"sizingY": "fixed",
 					"fontSize": 16
 				},
-				"Text5": {
+				"Text13": {
 					"type": "text",
 					"text": "Web area URL:",
-					"top": 810,
-					"left": 0,
+					"top": 820,
+					"left": 30,
 					"width": 150,
 					"height": 20,
 					"fontStyle": "italic",
 					"stroke": "#008000",
-					"textAlign": "right",
+					"textAlign": "left",
 					"fontWeight": "bold",
 					"sizingY": "fixed",
 					"fontSize": 16
 				},
-				"List Box": {
+				"List Box2": {
 					"type": "listbox",
 					"left": 50,
 					"top": 260,
-					"width": 315,
+					"width": 355,
 					"height": 101,
 					"events": [
 						"onClick",
@@ -254,24 +255,24 @@
 						{
 							"header": {
 								"text": "Product name",
-								"name": "Header2"
+								"name": "Header5"
 							},
-							"name": "Column2",
+							"name": "Column5",
 							"footer": {
-								"name": "Footer2"
+								"name": "Footer5"
 							},
-							"width": 150,
+							"width": 190,
 							"enterable": false,
 							"dataSource": "This:C1470.productName"
 						},
 						{
 							"header": {
 								"text": "Product used count",
-								"name": "Header1"
+								"name": "Header6"
 							},
-							"name": "Column1",
+							"name": "Column6",
 							"footer": {
-								"name": "Footer1"
+								"name": "Footer6"
 							},
 							"width": 150,
 							"enterable": false,
@@ -280,12 +281,12 @@
 						}
 					]
 				},
-				"Text6": {
+				"Text16": {
 					"type": "text",
-					"text": "License usage",
+					"text": "License usage (C/S only)",
 					"top": 230,
 					"left": 50,
-					"width": 150,
+					"width": 240,
 					"height": 20,
 					"textAlign": "left",
 					"stroke": "#6495ed",
@@ -293,25 +294,25 @@
 					"fontWeight": "bold",
 					"sizingY": "fixed"
 				},
-				"Button5": {
+				"Button9": {
 					"type": "button",
 					"text": "Refresh",
 					"top": 230,
-					"left": 260,
+					"left": 300,
 					"width": 90,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button5.4dm",
+					"method": "ObjectMethods/Button9.4dm",
 					"focusable": false,
 					"sizingY": "fixed"
 				},
-				"Line3": {
+				"Line5": {
 					"type": "line",
 					"top": 400,
 					"left": 30,
-					"width": 360,
+					"width": 340,
 					"height": 0,
 					"stroke": "#6495ed",
 					"strokeDashArray": [
@@ -320,11 +321,11 @@
 					],
 					"sizingY": "fixed"
 				},
-				"Line1": {
+				"Line6": {
 					"type": "line",
 					"top": 570,
 					"left": 30,
-					"width": 360,
+					"width": 340,
 					"height": 0,
 					"stroke": "#6495ed",
 					"strokeDashArray": [
@@ -333,7 +334,7 @@
 					],
 					"sizingY": "fixed"
 				},
-				"Text1": {
+				"Text17": {
 					"type": "text",
 					"text": "Privilege to put in the session:",
 					"top": 420,
@@ -342,7 +343,7 @@
 					"height": 20,
 					"sizingY": "fixed"
 				},
-				"Text2": {
+				"Text18": {
 					"type": "text",
 					"text": "Privileges in the session:",
 					"top": 530,
@@ -353,7 +354,7 @@
 					"stroke": "#6495ed",
 					"sizingY": "fixed"
 				},
-				"Text3": {
+				"Text19": {
 					"type": "text",
 					"text": "2 ------------------------------->",
 					"top": 210,
@@ -364,7 +365,7 @@
 					"fontSize": 18,
 					"sizingY": "fixed"
 				},
-				"Text4": {
+				"Text20": {
 					"type": "text",
 					"text": "1 ----->",
 					"top": 460,
@@ -374,6 +375,124 @@
 					"fontWeight": "bold",
 					"fontSize": 18,
 					"sizingY": "fixed"
+				}
+			}
+		},
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 75,
+					"width": 830,
+					"height": 730,
+					"fill": "transparent",
+					"stroke": "#6495ED",
+					"strokeWidth": 3
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 230,
+					"left": 200,
+					"width": 580,
+					"height": 620,
+					"fill": "transparent",
+					"stroke": "#E8A3A8",
+					"strokeWidth": 3
+				},
+				"Button1": {
+					"type": "button",
+					"text": "View products here",
+					"top": 200,
+					"left": 580,
+					"width": 180,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false,
+					"sizingY": "fixed"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Remote client session id:",
+					"top": 160,
+					"left": 150,
+					"width": 250,
+					"height": 20,
+					"textAlign": "right",
+					"stroke": "#6495ED",
+					"fontSize": 18,
+					"sizingY": "fixed"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 410,
+					"top": 160,
+					"width": 400,
+					"height": 20,
+					"dataSource": "Form:C1466.sessionId",
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"stroke": "#6495ed",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"sizingY": "fixed"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "4D Form",
+					"top": 120,
+					"left": 75,
+					"width": 200,
+					"height": 20,
+					"textAlign": "left",
+					"stroke": "#6495ed",
+					"fontSize": 18,
+					"sizingY": "fixed",
+					"fontWeight": "bold"
+				},
+				"Screenshot": {
+					"type": "webArea",
+					"left": 210,
+					"top": 240,
+					"width": 560,
+					"height": 600,
+					"sizingY": "fixed",
+					"borderStyle": "none"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Put this privilege in the session",
+					"top": 42,
+					"left": 49,
+					"width": 250,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"focusable": false,
+					"sizingY": "fixed"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Web area",
+					"top": 210,
+					"left": 200,
+					"width": 120,
+					"height": 20,
+					"textAlign": "left",
+					"stroke": "#E8A3A8",
+					"fontSize": 18,
+					"sizingY": "fixed",
+					"fontWeight": "bold"
 				}
 			}
 		}
@@ -389,5 +508,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2589
+	"geometryStamp": 3486
 }

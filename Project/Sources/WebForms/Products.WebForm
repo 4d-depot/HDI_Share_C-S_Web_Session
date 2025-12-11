@@ -76,6 +76,7 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
+				"ilKnW_j-38",
 				"bNbseIHWZ0"
 			],
 			"linkedNodes": {}
@@ -696,6 +697,46 @@
 				"__t": {}
 			},
 			"parent": "bNbseIHWZ0",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ilKnW_j-38": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "This is a Qodly page.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#E8A3A8",
+					"fontSize": "20px",
+					"textAlign": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
+			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

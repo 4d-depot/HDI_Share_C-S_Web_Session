@@ -27,10 +27,10 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:="share a 4D remote client session with web accesses"
+		$options.title:="share a desktop session with web accesses"
 		
 		$options.blog:="blog.4d.com"
-		$options.info:="Client server and web"  //ex : "4D View Pro feature"
+		$options.info:="Client server / standalone / web"  //ex : "4D View Pro feature"
 		
 		$options.minimumVersion:="2100"  // 1660 means 16R6   1601 means 16.1 (do not use !)
 		
