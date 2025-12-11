@@ -19,11 +19,10 @@ Function getPrivileges() : Text
 	
 	
 Function getOTP() : Text
-	return Session:C1714.createOTP(180)
+	return Session:C1714.createOTP(60)
 	
 	
 exposed Function getUserInfo() : Text
-	
 	return "Session id: "+String:C10(Session:C1714.id)+"\n \n"+"Welcome "+Session:C1714.storage.info.who+"! \n \n"+"You put the "+Session:C1714.getPrivileges().join(" ")+" privilege in the session at "+Session:C1714.storage.info.whatTime
 	
 	
@@ -32,9 +31,6 @@ Function getSessionId() : Text
 	
 	
 Function getLicenseUsage() : Collection
-	
-	TRACE:C157
-	
 	return License usage:C1782
 	
 	
